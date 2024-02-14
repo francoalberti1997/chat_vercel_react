@@ -57,12 +57,11 @@ const ChatRoom = ({ roomName }) => {
         onChange={(e) => setMessageInput(e.target.value)}
       />
       <br />
-      <input
-        id="chat-message-submit"
-        type="button"
+      <button id="chat-message-submit"
         value="Send"
-        onClick={sendMessage}
-      />
+        onClick={sendMessage}>
+        ENVIAR
+      </button>
     </div>
   );
 };
