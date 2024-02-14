@@ -7,7 +7,7 @@ const ChatRoom = ({ roomName }) => {
 
   useEffect(() => {
     const socket = new WebSocket(
-      `ws://localhost:8000/ws/chat/${roomName}/`
+      `ws://localhost:8000/ws/chat/lobby/`
     );
 
     socket.onopen = () => {
